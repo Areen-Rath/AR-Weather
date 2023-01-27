@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js"></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" />
+        <link
+            rel="stylesheet"
+            href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+                    <h1>MONUMENTS</h1>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+            <div>
+                <img id="amber" class="image-marker" src="./assets/AmberFort.jpg" />
+                <img id="gateway" class="image-marker" src="./assets/GatewayOfIndia.jpg" />
+                <img id="gate" class="image-marker" src="./assets/IndiaGate.jpg" />
+                <img id="lotus" class="image-marker" src="./assets/LotusTemple.jpg" />
+                <img id="victoria" class="image-marker" src="./assets/VictoriaMemorial.jpg" />
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12 text-center p-5">
+                <button id="navigate-button">Navigate</button>
+            </div>
+        </div>
+        <script src="./main.js"></script>
+        <link rel="stylesheet" href="./main.css" />
+    </body>
+</html>
